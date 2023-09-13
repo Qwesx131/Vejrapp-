@@ -1,0 +1,13 @@
+.buttongrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+    gap: 30px;
+}
+
+#box{
+    height: 15vh;
+    border-radius: 15px; 
+    background: linear-gradient(to bottom, #2afadf, #4c83ff);
+    
+}

@@ -1,0 +1,85 @@
+@import url(grid.css);
+
+*{
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 6.4px;
+}
+
+html {
+background: linear-gradient(to bottom, #fff, #a8a8a8);
+}
+
+.klokbar {
+    display: flex;
+    background: linear-gradient(to bottom, #2afadf, #4c83ff);
+    width: 65vw;
+    height: 2.3vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    border-radius: 15px; 
+    font-size: 8vw;
+    font-style: italic;
+}
+
+
+.søgebar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+#søgefelt {
+    
+    background: linear-gradient(to bottom, #2afadf, #4c83ff);
+    gap: 10vw;
+    display: flex;
+    width: 50vw;
+    height: 3vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    border-radius: 15px; 
+    font-size: 8vw;
+    font-style: italic;
+}
+
+#søgefelt img {
+    border-radius: 15px;
+    
+}
+
+.vejrudsigten{
+    background: linear-gradient(to bottom, #5895ff, #0800ff);
+   
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border-radius: 15px;
+
+}
+
+#dag1 {
+    background: linear-gradient(to bottom, #2afadf, #4c83ff);
+    width: 22vw;
+    height: 30vh;
+    border-radius: 15px;
+    
+    
+}
+
+
+
+#ugeboks{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding-top: 6vh;
+    padding-left: 3vw;
+    
+}
+
+
