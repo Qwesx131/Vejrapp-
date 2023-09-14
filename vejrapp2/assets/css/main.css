@@ -2,8 +2,8 @@
 
 *{
     margin: 0;
-    padding: 5px;
-    padding-bottom: 6.4px;
+    padding: 4.7px;
+    padding-bottom: 6.5px;
 }
 
 html {
@@ -13,8 +13,8 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
 .klokbar {
     display: flex;
     background: linear-gradient(to bottom, #2afadf, #4c83ff);
-    width: 65vw;
-    height: 2.3vh;
+    width: 70vw;
+    height: 4vh;
     margin: 0 auto;
     justify-content: center;
     align-items: center; 
@@ -29,15 +29,14 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
     display: flex;
     justify-content: space-between;
     gap: 1vw;
+    
 }
 
 #søgefelt {
-    
+    position: relative;
     background: linear-gradient(to bottom, #2afadf, #4c83ff);
-    gap: 10vw;
-    display: flex;
-    width: 50vw;
-    height: 3vh;
+    width: 70vw;
+    height: 6vh;
     margin: 0 auto;
     justify-content: center;
     align-items: center; 
@@ -47,18 +46,26 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
     font-style: italic;
 }
 
-#søgefelt img {
+#søgefelt::placeholder {
+    color: white;
+    
+}
+
+.søgebar img {
+    position: absolute;
     border-radius: 15px;
+    height: 6vh;
+    right: 90px;
+    top: 396px;
     
 }
 
 .vejrudsigten{
     background: linear-gradient(to bottom, #5895ff, #0800ff);
-   
-    height: 45vh;
+    width: 90vw;
+    height: 41vh;
     justify-content: center;
     align-items: center;
-    width: 90vw;
     border-radius: 15px;
 
 }
@@ -83,3 +90,46 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
 }
 
 
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 9vw;
+    height: 7vh;
+    
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 10px;
+    bottom: 0;
+    background-color: #acacac;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 5px;
+    background-color: #707070;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color:#00FF11;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateY(-40px);
+}
