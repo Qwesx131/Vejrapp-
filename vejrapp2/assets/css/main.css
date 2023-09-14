@@ -56,7 +56,7 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
     border-radius: 15px;
     height: 6vh;
     right: 90px;
-    top: 396px;
+    top: 407px;
     
 }
 
@@ -131,5 +131,5 @@ background: linear-gradient(to bottom, #fff, #a8a8a8);
 }
 
 .switch input:checked + .slider:before {
-    transform: translateY(-40px);
+    transform: translateY(-34px);
 }
